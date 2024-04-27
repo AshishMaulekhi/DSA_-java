@@ -8,7 +8,7 @@ public class maximumConsucutiveOne {
         System.out.println( "result is :" + result);
     }
     public static int maximumOne(int [] arr,int n){
-        //we have to return count value for  to "1" repeat itself consecutively in array
+        //we have to return count value for  to "1" which repeat itself consecutively in array
        int count=0;
        int maxi_count=0;
        for(int i=0;i<n;i++){
