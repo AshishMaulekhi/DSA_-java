@@ -1,5 +1,6 @@
 package Arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class setMatrixZero_2D {
@@ -22,7 +23,7 @@ public class setMatrixZero_2D {
         // ,{2,0,1}          ,{0,0,0},
         // ,{3,4,5}}          {3,0,5}}
 
-
+        //time complexity O(n*m) * O(n+m) + O(n*m)------->O(n^3)
         for(int i=0;i<n;i++){
 
             for(int j=0;j<m;j++){
@@ -56,7 +57,4 @@ public class setMatrixZero_2D {
             }
         }
     }
-
-
-
 }
