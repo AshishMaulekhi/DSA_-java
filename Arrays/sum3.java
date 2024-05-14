@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 public class sum3 {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         int[]array={-1,0,1,2,-1,-4};
         ArrayList<ArrayList<Integer>> Result=sumOfThree(array);
         for (ArrayList<Integer> it : Result) {
@@ -15,9 +15,7 @@ public class sum3 {
             System.out.print("] ");
         }
         System.out.println();
-    }
-
-
+        }
     public static ArrayList<ArrayList<Integer>> sumOfThree(int []arr){
         int n=arr.length;
         Set<ArrayList<Integer>> setOfarray= new HashSet<>();
@@ -39,5 +37,13 @@ public class sum3 {
         ArrayList<ArrayList<Integer>> result=new ArrayList<>(setOfarray);
         return result;
     }
+
+
 }
+
+
+
+
+
+
 
