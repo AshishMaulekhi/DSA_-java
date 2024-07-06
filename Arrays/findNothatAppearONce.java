@@ -16,8 +16,14 @@ public class findNothatAppearONce {
         //but for this methord array must contain positive no. and array value should be small.
         //HashMap<Integer,Integer> hash_1=new HashMap<>();
         //better_approach
-        int result=appear_Once(array);
-        System.out.println(result);
+        //int result=appear_Once(array);
+       // System.out.println(result);
+        List<Integer> result= aPPear_once(arr);
+        System.out.println("[");
+        for(int value:result){
+            System.out.print(value);
+        }
+        System.out.println("]");
     }
     public static int[] apearOnce(int[]arr){
         //brute force
@@ -67,7 +73,7 @@ public class findNothatAppearONce {
         }
         return -1;//in case we can't find any unique element.
     }
-    public static int aPPear_once(int []arr){
+    public static List<Integer> aPPear_once(int []arr){
         //better approach--2
         //using hash map
         //hashmap(key,value) pair
@@ -75,9 +81,20 @@ public class findNothatAppearONce {
         HashMap<Integer,Integer>hash_map=new HashMap<>();
         int n=arr.length;
         for(int i=0;i<n;i++){
-           // hash_map[arr[i]]++;
-
+            if(hash_map.containsKey(arr[i])){
+                int count=hash_map.get(arr[i]);
+                hash_map.put(arr[i],++count);
+            }
+            else {
+                hash_map.put(arr[i],1);
+            }
         }
-        return 0;// ese  hi lagaya h hata dena bad m solve kerte time
+        List<Integer> temp= new ArrayList<>();
+        for(int key: hash_map.keySet()){
+            if(hash_map.get(key)==1){
+                temp.add(key);
+            }
+        }
+        return temp;
     }
 }

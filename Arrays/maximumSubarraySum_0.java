@@ -1,5 +1,8 @@
 package Arrays;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class maximumSubarraySum_0 {
     public static void main(String[] args) {
         int[]array={1,2,3,-1-2,0,-3,-2,-1};
@@ -21,6 +24,21 @@ public class maximumSubarraySum_0 {
             }
         }
         return maxi;
+    }
+    public static int maximumSumSubarray(int[]array){
+        Map<Integer,Integer> hashmap=new HashMap<>();
+        int len=0;
+        int n=array.length;
+        int sum=0;
+        for(int i=0;i<n;i++){
+            sum+=array[i];
+
+            if(hashmap.containsKey(sum)){
+                hashmap.put(sum,i);
+
+            }
+        }
+        return len;
     }
 }
 

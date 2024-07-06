@@ -4,7 +4,8 @@ public class largestSumofContiguousArray {
     public static void main(String[] args) {
         int[]array={1,2,3,4,-3,-5,4,-4};
        // System.out.println(largestSubarraySum(array));
-        System.out.println(maxiSubarray(array));
+        //System.out.println(maxiSubarray(array));
+        System.out.println(maximumsubArraysum(array));
     }
     public static int largestSubarraySum(int[]arr){
         //brute force
@@ -41,4 +42,17 @@ public class largestSumofContiguousArray {
 
     }
 
+    public static int maximumsubArraysum(int[]arr){
+        //int[]array={1,2,3,4,-3,-5,4,-4};
+        int n=arr.length;
+        int sum=0;
+        int maxi=Integer.MIN_VALUE;
+        for(int i=0;i<n;i++){
+           sum+=arr[i];
+           if(sum>maxi) {
+               maxi = Math.max(maxi, sum);
+           }
+        }
+        return maxi;
+    }
 }
