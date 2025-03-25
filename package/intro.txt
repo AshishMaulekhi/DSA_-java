@@ -1,0 +1,16 @@
+Package : Group of similar type of classes, interface and sub-packages for storage.
+Advantage : Access protection, for categorization, remove naming collisions.
+
+How to create it :
+1. using keyword :
+
+Package < name > 
+class < name >{
+ 
+} or we can use interface 
+
+2. To compile package use command :
+javac -d < filename.java >
+
+3. To execute the package program :
+java < package name >.classfilename
