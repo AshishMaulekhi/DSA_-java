@@ -5,6 +5,19 @@ out/
 .idea
 
 ### Eclipse ###
+abstraction/
+  .DS_Store
+        IO/
+        advance/
+        array_java/
+        basics/
+        exception_handling/
+        inheritance/
+        network/
+        package/
+        questions/
+        string/
+        testing/
 .apt_generated
 .classpath
 .factorypath
