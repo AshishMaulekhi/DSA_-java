@@ -1,0 +1,4 @@
+Hello
+Hello World2016
+Hello java
+Welcome to java batch
